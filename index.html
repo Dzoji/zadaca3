@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zadaca 3 - HTML</title>
+
+    <!-- Veza sa CSS zbog <fieldset></fieldset> (Ne znam u html-u smanjiti okvir)-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-- 1. ZADATAK-->
+    <ol>
+        <li>
+            <a href="https://en.wikipedia.org/wiki/HTML" target="_blank"><img src="media/html.png" alt="HTML" width="20px">
+            <a href="https://en.wikipedia.org/wiki/HTML" target="_blank">HTML</a>
+        </li>
+        <li>
+            <a href="https://hr.wikipedia.org/wiki/CSS" target="_blank"><img src="media/css.png" alt="CSS" width="20px">
+            <a href="https://hr.wikipedia.org/wiki/CSS" target="_blank">CSS</a>
+        </li>
+        <li>
+            <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank"><img src="media/js.png" alt="JS" width="20px">
+            <a href="https://en.wikipedia.org/wiki/JavaScript" target="_blank">JS</a>
+        </li>
+    </ol>
+</body>
+</html>
+
+<!-- 2. ZADATAK (ako sam dobro razumio u tabeli treba 5 jezika/alata)-->
+    <table border="3px">
+        <tr>
+            <th>Naziv</th>
+            <th>Slika</th>
+            <th>Godina</th>
+            <th>Link</th>
+        </tr>
+
+        <tr> 
+            <td>HTML</td>
+            <td><img src="media/html.png" alt="HTML" height="30px"></td>
+            <td>1993</td>
+            <td><a href="https://en.wikipedia.org/wiki/Tim_Berners-Lee" target="_blank">Tim Berners-Lee</a></td>
+        </tr>
+
+        <tr>
+            <td>CSS</td>
+            <td><img src="media/css.png" alt="CSS" height="30px"></td>
+            <td>1996</td>
+            <td><a href="https://en.wikipedia.org/wiki/H%C3%A5kon_Wium_Lie" target="_blank">Håkon Wium Lie</a></td>
+        </tr>
+
+        <tr>
+            <td>JS</td>
+            <td><img src="media/js.png" alt="JS" height="30px"></td>
+            <td>1995</td>
+            <td><a href="https://en.wikipedia.org/wiki/Brendan_Eich" target="_blank">Brendan Eich</a></td>
+        </tr>
+
+        <tr>
+            <td>Python</td>
+            <td><img src="media/py.png" alt="JS" height="30px"></td>
+            <td>1990</td>
+            <td><a href="https://en.wikipedia.org/wiki/Guido_van_Rossum" target="_blank">Guido van Rossum</a></td>
+        </tr>
+
+        <tr>
+            <td>PHP</td>
+            <td><img src="media/php.png" alt="JS" height="30px"></td>
+            <td>1995</td>
+            <td><a href="https://en.wikipedia.org/wiki/Rasmus_Lerdorf" target="_blank">Rasmus Lerdorf</a></td>
+        </tr>
+    </table>
+
+<!-- 3. ZADATAK -->
+    <h1>Forma</h1>
+    <form action="">
+        <div>
+            <label for="">Ime i prezime</label>
+            <br>
+            <input required type="text" placeholder="Unesite ime i prezime" name="imeIprezime">
+        </div>
+        <div>
+            <label for="">Adresa</label>
+            <br>
+            <input required type="text" placeholder="Unesite vasu adresu" name="adresa">
+        </div>
+        <div>
+            <label for="">E-mail</label>
+            <br>
+            <input required type="email" placeholder="Unesite e-mail" name="e-mail">
+        </div>
+
+        <div>
+            <fieldset> <!-- Provjeri CSS -->
+                <legend>Pol</legend>
+                <br>
+                <input type="radio" name="pol" id="polM" value="M">  <label for="polM">M</label>
+                <br>
+                <input type="radio" name="pol" id="polZ" value="Ž" checked>  <label for="polZ">Ž</label>
+            </fieldset>
+        </div>
+
+        <div>
+            <label for="">Kurs</label>
+            <br>
+            <select name="select_kurs" id="kurs">
+                <option value="html">HTML</option>
+                <option value="css">CSS</option>
+                <option value="js">JS</option>
+                <option value="python">Python</option>
+                <option value="php">PHP</option>
+            </select>
+        </div>
+        
+        <div>
+            <input type="submit" value="OK">
+        </div>
+    </form>
